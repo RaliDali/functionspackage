@@ -2,9 +2,11 @@
 
 export("%>%")
 export(mybin)
+export(mycltp)
 export(myddt)
 export(myncurve)
 export(myread)
+import(Intro2R)
 import(dplyr)
 import(ggplot2)
 importFrom(magrittr,"%>%")

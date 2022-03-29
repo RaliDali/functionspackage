@@ -13,6 +13,7 @@ library(Intro2R)
 #' @export
 #' @import ggplot2
 #' @import dplyr
+#' @import Intro2R
 #'
 #' @examples
 #' \dontrun{myddt(df = ddt, SPECIES = "CCATFISH")}
