@@ -20,5 +20,5 @@ Finds area under normal curve
 myncurve
 }
 \examples{
-\dontrun {myncurve(mu = 3, sigma = 2, a = 4)}
+\dontrun{myncurve(mu = 3, sigma = 2, a = 4)}
 }

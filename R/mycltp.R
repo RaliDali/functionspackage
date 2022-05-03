@@ -4,19 +4,21 @@
 #' @param iter Number of iterations
 #' @param lambda Value of lambda (iter/n)
 #' @param ... Additional arguments, if needed
+#' @import graphics
+#' @import grDevices
 #'
 #' @return A very pretty set of graphs for the distribution
 #' @export
 #'
 #' @examples
-#' \dontrun {mycltp(n = 2, iter = 10000, lambda = 4)}
+#' \dontrun{mycltp(n = 2, iter = 10000, lambda = 4)}
 
 mycltp=function(n,iter,lambda=10,...){
 
   y=rpois(n*iter,lambda=lambda)
-  data=matrix(y,nr=n,nc=iter,byrow=TRUE)
+  data=matrix(y,nrow=n,ncol=iter,byrow=TRUE)
   w=apply(data,2,mean)
-  param=hist(w,plot=FALSE)
+  param=graphics::hist(w,plot=FALSE)
 
   ymax=max(param$density)
   ymax=1.1*ymax

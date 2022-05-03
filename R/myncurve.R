@@ -3,12 +3,14 @@
 #' @param mu Mean
 #' @param sigma Standard deviation
 #' @param a Upper tail value
+#' @import graphics
+#' @import stats
 #'
 #' @return Finds area under normal curve
 #' @export
 #'
 #' @examples
-#' \dontrun {myncurve(mu = 3, sigma = 2, a = 4)}
+#' \dontrun{myncurve(mu = 3, sigma = 2, a = 4)}
 
 myncurve = function(mu, sigma, a){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))

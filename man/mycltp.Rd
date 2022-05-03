@@ -22,5 +22,5 @@ A very pretty set of graphs for the distribution
 mycltp
 }
 \examples{
-\dontrun {mycltp(n = 2, iter = 10000, lambda = 4)}
+\dontrun{mycltp(n = 2, iter = 10000, lambda = 4)}
 }

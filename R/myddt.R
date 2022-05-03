@@ -1,8 +1,3 @@
-library(ggplot2)
-library(dplyr)
-library(Intro2R)
-
-
 #' @title myddt
 #'
 #' @param df The data file to pull from (must be a .csv file)
@@ -11,9 +6,9 @@ library(Intro2R)
 #'
 #' @return Produces a plot of length vs weight for declared species, table of relative frequency values per river, and tables of species-filtered and unfiltered data
 #' @export
+#' @importFrom dplyr '%>%' filter
+#' @importFrom utils  write.csv
 #' @import ggplot2
-#' @import dplyr
-#' @import Intro2R
 #'
 #' @examples
 #' \dontrun{myddt(df = ddt, SPECIES = "CCATFISH")}

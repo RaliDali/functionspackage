@@ -1,0 +1,73 @@
+---
+title: "What this package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What this package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(functionspackage)
+```
+
+# Introduction
+
+This is a package of basic functions for MATH 4753.
+
+# myread()
+
+The myread() function is utilized for opening a CSV file of your choosing. You need only call "myread()" for this function to work.
+
+# mybin()
+
+The mybin() function creates a plot for a binomial simulation given certain parameters. You must call the function as follows:
+
+mybin(iter = 100, n = 10, p = 0.7)
+
+where *iter* is the number of iterations, *n* is the sample size, and *p* is the probability.
+
+# myncurve()
+
+The myncurve() function is used to find the area under a normal curve. You must call the function as follows:
+
+myncurve(mu = 3, sigma = 2, a = 4)
+
+where *mu* is the mean, *sigma* is the standard deviation, and *a* is the upper tail value.
+
+# fire
+
+This is a data set of the fire safety of doors.
+
+# mycltp()
+
+The mycltp() function is used to create many useful plots for a Poisson distribution. You must call the function as follows:
+
+mycltp(n = 2, iter = 10000, lambda = 4)
+
+where *n* is the sample size, *iter* is the number of iterations, and *lambda* is *iter* divided by *n*.
+
+# myboot2()
+
+The myboot2() function is used to create a bootstrap and provides a histogram of sample evaluation using requested function. You must call the function as follows:
+
+myboot2(iter=10000,sam,fun="mean",alpha=0.30,cx=1.5
+
+where *iter* is the number of iterations, *x* is the sample, *fun* is the function to evaluate with, and *alpha* is the bootstrap interval value (95% = 0.05).
+
+# mymaxlik()
+
+The mymaxlik() function is used to find the max likelihood value of a given sample and parameters, and provides index values for different variables and a graph illustrating the maximum likelihood value. You must call the function as follows:
+
+mymaxlik(x = c(3, 3, 4, 3, 4, 5, 5, 4), param = seq(0, 1, length = 1000)
+
+where *lfun* is the function to use (binomial, poisson, etc), *x* is a vector of values, *param* is the parameter to calculate (prob, theta, lambda, etc), and *...* are additional arguments, if needed.
+
+
