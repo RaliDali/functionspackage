@@ -1,0 +1,51 @@
+---
+title: "Functions Package"
+author: "Jay Leger"
+date: "5/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# myread()
+
+```{r}
+library(functionspackage)
+myread(file.choose())
+```
+
+# mybin()
+
+```{r}
+mybin()
+```
+
+# myncurve()
+
+```{r}
+myncurve(mu = 10, sigma = 5, a = 6)
+```
+
+# fire
+
+```{r}
+data("fire")
+knitr::kable(head(fire))
+```
+
+# mycltp()
+
+```{r}
+clt = mycltp(n = 10, iter = 10000, lambda = 10)
+```
+
+
+
+
+
+
+
+
+

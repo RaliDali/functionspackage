@@ -23,7 +23,7 @@ mycltp=function(n,iter,lambda=10,...){
   ymax=max(param$density)
   ymax=1.1*ymax
 
-  layout(matrix(c(1,1,2,3),nr=2,nc=2, byrow=TRUE))
+  layout(matrix(c(1,1,2,3),nrow=2,ncol=2, byrow=TRUE))
 
   hist(w,freq=FALSE,  ylim=c(0,ymax), col=rainbow(max(w)),
        main=paste("Histogram of sample mean","\n", "sample size= ",n," iter=",iter," lambda=",lambda,sep=""),

@@ -30,7 +30,7 @@ myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where
             ...)
 
   #mat will be a matrix that contains the data, this is done so that I can use apply()
-  mat=matrix(x,nr=length(x),nc=1,byrow=TRUE)
+  mat=matrix(x,nrow=length(x),ncol=1,byrow=TRUE)
 
   #pte is the point estimate
   #This uses whatever fun is
